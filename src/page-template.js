@@ -1,4 +1,4 @@
-const generatePage = (name, github) => {
+module.exports = (name, github) => {
     return `
     <!DOCTYPE html> 
     <html lang="en"> 
@@ -17,4 +17,7 @@ const generatePage = (name, github) => {
     `;
   };
 
-  module.exports = generatePage;
+//   module.exports = generatePage;
+
+// the function above used to be called generatePage but the code snapshop at the end of the module ended up replacing 
+// it with module.exports since during the module they made us put module.exports = generatePage at the bottom.
